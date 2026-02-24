@@ -1,0 +1,71 @@
+/* src/App.css */
+:root {
+  --bg-creme: #fdfaf5;      /* Warna kertas lama yang nyaman di mata */
+  --dark-wood: #2c1810;     /* Cokelat gelap untuk teks & aksen */
+  --gold-accent: #b8860b;   /* Emas redup untuk detail */
+}
+
+.container {
+  min-height: 100vh;
+  background-color: var(--bg-creme);
+  color: var(--dark-wood);
+  font-family: 'Georgia', serif; /* Font klasik untuk kesan budaya */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid var(--dark-wood);
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-content {
+  display: flex;
+  gap: 2rem;
+  max-width: 900px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.instrument-card {
+  background-color: var(--dark-wood); /* Sisi "Gelap" untuk alat musik */
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.description {
+  flex: 1;
+  min-width: 300px;
+  line-height: 1.6;
+}
+
+.btn-explore {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--gold-accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-explore:hover {
+  background-color: var(--dark-wood);
+}
